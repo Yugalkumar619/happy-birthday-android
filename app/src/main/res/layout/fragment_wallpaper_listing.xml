@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mvvm.home.view.HomeFragment">
+
+   <include
+       android:id="@+id/ilToolbar"
+       layout="@layout/layout_toolbar"
+       />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:clipToPadding="false"
+        android:layout_marginEnd="@dimen/screen_margin"
+        tools:listitem="@layout/lv_item_wallpaper_list"
+        app:layout_constraintTop_toBottomOf="@+id/ilToolbar"
+        app:layout_constraintBottom_toTopOf="@+id/banner_container"
+        app:spanCount="3"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

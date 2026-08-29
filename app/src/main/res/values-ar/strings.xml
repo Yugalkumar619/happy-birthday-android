@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="text_enable">Enable</string>
+    <string name="no">No</string>
+    <string name="press_back_message">Press back once again to close app.</string>
+    <string name="enable_location_to_continue">You need to enable location to continue</string>
+    <string name="enable_notification_to_continue">You need to enable/allow Notification Access from app settings to continue…</string>
+    <string name="enable_storage_to_continue">You need to enable/allow storage access from app settings to continue…</string>
+    <string name="enable_camera_to_continue">You need to enable/allow Camera access from app settings to continue…</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="error_message">There was an error while communicating with the server. Please try again later.</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="select">Select</string>
+    <string name="are_you_sure">Are you sure?</string>
+
+    <!--    language-->
+    <string name="alert_language">Do you want to change the language to English?</string>
+    <string name="no_lang">No</string>
+    <string name="yes_lang">Yes</string>
+    <string name="selected_language_name">English</string>
+    <string name="alert_title_lang">Alert!</string>
+
+    <string name="choose_image">Choose image</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string-array name="WeekDaysShort">
+        <item>الاثنين</item>
+        <item>الثلاثاء</item>
+        <item>الأربعاء</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+        <item>الأحد</item>
+    </string-array>
+
+    <string-array name="MonthsList">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <string-array name="custom_months">
+        <item>كانون الثاني</item>
+        <item>شهر فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>قد</item>
+        <item>يونيو</item>
+        <item>تموز</item>
+        <item>شهر اغسطس</item>
+        <item>سبتمبر</item>
+        <item>اكتوبر</item>
+        <item>شهر نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <string-array name="MonthsShort">
+        <item>كانون الثاني</item>
+        <item>شهر فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>قد</item>
+        <item>يونيو</item>
+        <item>تموز</item>
+        <item>شهر اغسطس</item>
+        <item>سبتمبر</item>
+        <item>اكتوبر</item>
+        <item>شهر نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <plurals name="seconds" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s قبل ثانية</item>
+        <item quantity="other">%1$s منذ ثوانى</item>
+    </plurals>
+
+    <plurals name="minutes" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s منذ دقيقة</item>
+        <item quantity="other">%1$s دقائق مضت</item>
+    </plurals>
+
+    <plurals name="hours" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s منذ ساعة</item>
+        <item quantity="other">%1$s منذ ساعات</item>
+    </plurals>
+
+    <plurals name="days" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s منذ يوم</item>
+        <item quantity="other">%1$s أيام مضت</item>
+    </plurals>
+
+    <plurals name="week" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s منذ أسبوع</item>
+        <item quantity="other">%1$s منذ أسابيع</item>
+    </plurals>
+
+    <plurals name="month" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s منذ شهر</item>
+        <item quantity="other">%1$s منذ اشهر</item>
+    </plurals>
+
+    <plurals name="years" tools:ignore="MissingQuantity">
+        <item quantity="one">%1$s منذ عام</item>
+        <item quantity="other">%1$s منذ سنوات</item>
+    </plurals>
+
+    <!--Todo Add Error string here START-->
+    <string name="error_fb">لديك مشكلة في حساب الفيسبوك الخاص بك. يرجى إعادة المحاولة لاحقا.</string>
+    <string name="error_google">يبدو أن لديك مشكلة في حساب google الخاص بك. يرجى إعادة المحاولة لاحقا.</string>
+    <string name="error_enter_email">الرجاء إدخال عنوان البريد الإلكتروني</string>
+    <string name="error_invalid_email">يرجى إدخال عنوان بريد إلكتروني صحيح</string>
+    <string name="error_enter_password">الرجاء إدخال كلمة المرور</string>
+    <string name="error_enter_confirm_password">الرجاء إدخال تأكيد كلمة المرور</string>
+    <string name="error_password_length">يجب ألا يقل طول كلمة المرور عن 6 أحرف</string>
+    <string name="error_enter_old_password">الرجاء إدخال كلمة المرور القديمة</string>
+    <string name="error_enter_new_password">الرجاء إدخال كلمة مرور جديدة</string>
+    <string name="error_password_match">كلمة المرور وتأكيد كلمة المرور غير متطابقة</string>
+    <string name="error_old_password_match">كلمة المرور القديمة وكلمة المرور الجديدة غير متطابقة</string>
+    <string name="error_enter_confirm_new_password">الرجاء إدخال تأكيد كلمة المرور الجديدة</string>
+    <string name="error_new_password_match">كلمة المرور الجديدة وتأكيد كلمة المرور غير متطابقة</string>
+    <string name="error_old_password_length">يجب ألا يقل طول كلمة المرور القديمة عن 6 أحرف</string>
+    <string name="error_new_password_length">يجب ألا يقل طول كلمة المرور الجديدة عن 6 أحرف</string>
+
+    <!-- Todo Add show msg strings here -->
+    <string name="email_not_found">لم يتم العثور على معرف البريد الإلكتروني</string>
+    <string name="user_login_successfully">قام المستخدم بتسجيل الدخول بنجاح</string>
+
+    <!--Todo LOGIN-->
+    <string name="label_login">تسجيل الدخول</string>
+    <string name="label_login_subtitle">دعنا نساعدك على التواصل مع أصحاب الأعمال</string>
+    <string name="hint_email_id">معرف البريد الإلكتروني</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="label_remember_me">تذكرني</string>
+    <string name="label_or">أو</string>
+    <string name="label_sign_up">التسجيل</string>
+    <string name="label_dont_have_an_account">ليس لديك حساب؟</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_select_language">اختار اللغة</string>
+    <string name="label_english">English</string>
+    <string name="label_arabic">عربي</string>
+    <string name="label_welcome">مرحباً</string>
+    <string name="label_lets_get_started">هيا بنا نبدأ</string>
+    <string name="label_wallpaper">Wallpaper</string>
+    <string name="label_saved">Saved</string>
+    <string name="label_bhajan">Bhajan</string>
+    <string name="label_ringtone">Ringtone</string>
+    <string name="label_more_apps">More Apps</string>
+    <string name="label_rate_us">Rate Us</string>
+    <string name="label_of">of</string>
+    <string name="label_details">Details</string>
+    <string name="label_share">Share</string>
+    <string name="label_set_wallpaper">Set Wallpaper</string>
+    <string name="label_wallpaper_details">Wallpaper Details</string>
+    <string name="label_invite_friend">Invite Friend</string>
+    <string name="label_rate_app">Rate App</string>
+    <string name="label_more_app">More App</string>
+    <string name="label_privacy_policy">Privacy Policy</string>
+    <string name="label_location">Location</string>
+    <string name="label_clear_cache">Clear Cache</string>
+    <string name="label_home_screen">Home Screen</string>
+    <string name="label_lock_screen">Lock Screen</string>
+    <string name="label_both_screens">Both Screens</string>
+    <string name="label_set_as_wallpaper">Set as Wallpaper</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_jai_shri_ram_wallpaper_set_successfully">Jai Shri Ram! Wallpaper set successfully</string>
+    <string name="label_share_image">Share Image</string>
+    <string name="label_failed">Failed: %1$s</string>
+    <string name="label_delete">Delete</string>
+    <string name="label_version">Version : %1$s</string>
+    <string name="lable_set_as_ringtone">Set as Ringtone</string>
+    <string name="label_set_as_alarm">Set as Alarm</string>
+    <string name="label_set_as_notification">Set as Notification</string>
+    <string name="label_no_blessings_saved_yet">No Blessings Saved Yet</string>
+    <string name="label_save_the_images_you_love">Save the images you love to keep them close.</string>
+    <string name="label_new_year_2026">New Year 2026</string>
+    <string name="label_wishes">Wishes</string>
+    <string name="label_ready_to_sparkle_in_2026">Ready to sparkle in 2026?</string>
+    <string name="label_save_your_favorite_wishes">Save your favorite wishes and greetings — let’s fill this space with joy and good vibes!</string>
+    <string name="label_premium_images">Premium Images</string>
+    <string name="label_unlock_premium_wishes">💎 Watch Ad → Unlock 10 Images</string>
+    <string name="label_daily_limit_reached_max_5_ads">Daily limit reached: Max 5 ads per day. Try again tomorrow!</string>
+    <string name="label_premium_unlocked_enjoy_10">Premium unlocked! Enjoy 10 new wallpapers for 24 hours.</string>
+    <string name="label_ad_not_ready_yet">Ad not ready yet. Try again in a moment.</string>
+    <string name="label_go_premium">👑 One-Time Premium \n🔓 Unlock All Images \n🚫 No Ads</string>
+
+    <string name="label_done">Done</string>
+    <string name="label_eraser_on">Eraser ON</string>
+    <string name="label_eraser_off">Eraser OFF</string>
+    <string name="label_preview">Preview</string>
+    <string name="label_opacity">Opacity</string>
+    <string name="label_size">Size</string>
+    <string name="label_color">Color</string>
+    <string name="label_brush_settings">Brush Settings</string>
+    <string name="label_choose_emoji">Choose Emoji</string>
+    <string name="label_add_text">Add Text</string>
+    <string name="label_style">Style</string>
+    <string name="label_b">B</string>
+    <string name="label_i">I</string>
+    <string name="label_add_your_name">Add Your Name</string>
+    <string name="label_apply">Apply</string>
+    <string name="label_premium_unlocked">Premium Unlocked ✓</string>
+    <string name="label_go_premium_price">👑 Go Premium – %1$s \n🔓 Unlock All Images \n🚫 No Ads</string>
+    <string name="label_remove_bold">Remove BOLD</string>
+    <string name="label_apply_bold">Apply BOLD</string>
+    <string name="label_remove_italic">Remove ITALIC</string>
+    <string name="label_apply_italic">Apply ITALIC</string>
+    <string name="label_select_a_day">Select a Day</string>
+    <string name="label_no_wishes_saved_yet">No wishes saved yet</string>
+    <string name="label_start_saving_valentine">Start saving Valentine wishes you love</string>
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/conCalendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/viewDivLine"
+        style="@style/DividerLine"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMonth" />
+
+    <TextView
+        android:id="@+id/txtMonth"
+        style="@style/TextStyleStartBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textColor="@color/txt_color_primary"
+        android:textSize="@dimen/biggest_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="November 2021" />
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        style="@style/fontRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/primary_light_color"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivLine"
+        app:mcv_calendarMode="month"
+        app:mcv_dateTextAppearance="@style/CalendarDateTextStyle"
+        app:mcv_firstDayOfWeek="sunday"
+        app:mcv_monthLabels="@array/custom_months"
+        app:mcv_selectionMode="single"
+        app:mcv_selectionColor="@color/color_white"
+        app:mcv_showOtherDates="out_of_range"
+        app:mcv_showWeekDays="true"
+        app:mcv_rightArrow="@null"
+        app:mcv_leftArrow="@null"
+        app:mcv_tileHeight="@dimen/_35sdp"
+        app:mcv_tileWidth="@dimen/_43sdp"
+        app:mcv_weekDayLabels="@array/WeekDaysShort"
+        app:mcv_weekDayTextAppearance="@style/CalendarDayTextStyle" />
+
+    <ImageView
+        android:id="@+id/ivCalendarArrow"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:rotation="90"
+        android:src="@drawable/ic_right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMonth"
+        app:layout_constraintStart_toEndOf="@+id/txtMonth"
+        app:layout_constraintTop_toTopOf="@+id/txtMonth"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

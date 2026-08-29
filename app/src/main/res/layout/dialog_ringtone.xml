@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ram_dialog_bg"
+    android:padding="20dp"
+    android:layout_margin="20dp"
+    android:elevation="10dp">
+
+    <TextView
+        android:id="@+id/tvRingtoneName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shri Ram Dhun"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_orange"
+            android:src="@android:drawable/ic_media_play"
+            app:tint="@color/color_white" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_orange"
+            android:src="@android:drawable/ic_media_pause"
+            android:visibility="gone"
+            app:tint="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnSetRingtone"
+        style="@style/CommonButtonStyle.Pink"
+        android:text="@string/lable_set_as_ringtone"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/btnSetAlarm"
+        style="@style/CommonButtonStyle.Pink"
+        android:text="@string/label_set_as_alarm"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/btnSetNotification"
+        style="@style/CommonButtonStyle.Pink"
+        android:text="@string/label_set_as_notification"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout style="@style/AppBackGroundStyleLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivWallImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/valentine_12"
+                app:layout_constraintDimensionRatio="1:1"/>
+
+            <LinearLayout
+                android:id="@+id/linOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivWallImage"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/ilInviteFriend"
+                    layout="@layout/layout_side_menu_item"/>
+
+                <include
+                    android:id="@+id/ilRateApp"
+                    layout="@layout/layout_side_menu_item"/>
+
+                <include
+                    android:id="@+id/ilMoreApps"
+                    layout="@layout/layout_side_menu_item"/>
+
+                <include
+                    android:id="@+id/ilPrivacyPolicy"
+                    layout="@layout/layout_side_menu_item"/>
+
+                <include
+                    android:id="@+id/ilLocation"
+                    layout="@layout/layout_side_menu_item"/>
+
+                <include
+                    android:id="@+id/ilClearCache"
+                    android:visibility="gone"
+                    layout="@layout/layout_side_menu_item"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/biggest_text_size"
+                android:textColor="@color/secondary_color"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginBottom="@dimen/_10sdp"
+                style="@style/TextStyleCenterBold"
+                tools:text="Version : 1.0"
+                app:layout_constraintTop_toBottomOf="@+id/linOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

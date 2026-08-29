@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.app.happy_birthday.mvvm.home.view.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_wallpaper_listing"
+        android:name="com.app.happy_birthday.mvvm.wallpaper.view.WallpaperListingFragment"
+        tools:layout="@layout/fragment_wallpaper_listing" />
+    <action
+        android:id="@+id/action_navigation_wallpaper_listing"
+        app:destination="@id/navigation_wallpaper_listing" />
+
+    <fragment
+        android:id="@+id/navigation_saved_listing"
+        android:name="com.app.happy_birthday.mvvm.saved.view.SavedListingFragment"
+        tools:layout="@layout/fragment_saved_listing" />
+    <action
+        android:id="@+id/action_navigation_saved_listing"
+        app:destination="@id/navigation_saved_listing" />
+
+    <fragment
+        android:id="@+id/navigation_wishes_listing"
+        android:name="com.app.happy_birthday.mvvm.wishes.view.WishesListingFragment"
+        tools:layout="@layout/fragment_wishes_listing" />
+    <action
+        android:id="@+id/action_navigation_wishes_listing"
+        app:destination="@id/navigation_wishes_listing" />
+
+    <fragment
+        android:id="@+id/navigation_bhajan_details"
+        android:name="com.app.happy_birthday.mvvm.wishes.view.WishesDetailsFragment"
+        tools:layout="@layout/fragment_wishes_details" />
+    <action
+        android:id="@+id/action_navigation_bhajan_details"
+        app:destination="@id/navigation_bhajan_details" />
+
+    <fragment
+        android:id="@+id/navigation_ringtone_listing"
+        android:name="com.app.happy_birthday.mvvm.ringtone.view.RingtoneListingFragment"
+        tools:layout="@layout/fragment_ringtone_listing" />
+    <action
+        android:id="@+id/action_navigation_ringtone_listing"
+        app:destination="@id/navigation_ringtone_listing" />
+
+    <fragment
+        android:id="@+id/navigation_category_listing"
+        android:name="com.app.happy_birthday.mvvm.category.view.CategoryListingFragment"
+        tools:layout="@layout/fragment_category_listing" />
+    <action
+        android:id="@+id/action_navigation_category_listing"
+        app:destination="@id/navigation_category_listing" />
+
+</navigation>

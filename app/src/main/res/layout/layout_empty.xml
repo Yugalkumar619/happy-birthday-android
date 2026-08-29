@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivEmptyIcon"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtEmptyMessage"
+        style="@style/TextStyleCenterSemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="TITLE EMPTY"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/primary_dark_color"
+        android:textSize="@dimen/big_text_size" />
+
+    <TextView
+        android:id="@+id/txtEmptySubMessage"
+        style="@style/TextStyleCenterRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:text="SUB TITLE EMPTY"
+        android:textColor="@color/txt_color_primary"
+        android:textSize="@dimen/medium_text_size" />
+
+    <TextView
+        android:id="@+id/btnNavigate"
+        style="@style/CommonButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:textSize="@dimen/btn_text_size"
+        android:visibility="gone" />
+</LinearLayout>

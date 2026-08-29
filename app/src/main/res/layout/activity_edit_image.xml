@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black">
+
+    <ja.burhanrashid52.photoeditor.PhotoEditorView
+        android:id="@+id/photoEditorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Top bar: Back + Save -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEditTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivEditBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_back_round"
+            android:layout_marginStart="@dimen/screen_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSaveEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_apply"
+            style="@style/CommonInputEditTextStyle"
+            android:textColor="@color/color_black"
+            android:backgroundTint="@color/color_white"
+            android:textSize="18sp"
+            android:layout_marginEnd="@dimen/screen_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Bottom toolbar for editing tools (draw, text, emoji, filter, etc.) -->
+    <!-- You can customize this with buttons/icons as needed -->
+    <LinearLayout
+        android:id="@+id/llEditTools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_black_trans"
+        android:weightSum="8"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Example buttons -->
+        <ImageView
+            android:id="@+id/btnBrush"
+            android:src="@drawable/ic_brush"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white" />
+
+        <ImageView android:id="@+id/btnText"
+            android:src="@drawable/ic_text"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+        <ImageView android:id="@+id/btnEmoji"
+            android:src="@drawable/ic_emoji"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+        <ImageView android:id="@+id/btnSticker"
+            android:src="@drawable/ic_sticker"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+        <ImageView android:id="@+id/btnFilter"
+            android:src="@drawable/ic_filter"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+        <ImageView android:id="@+id/btnEraser"
+            android:src="@drawable/ic_eraser"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+        <ImageView android:id="@+id/btnUndo"
+            android:src="@drawable/ic_undo"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+        <ImageView android:id="@+id/btnRedo"
+            android:src="@drawable/ic_redo"
+            android:layout_weight="1"
+            android:layout_height="@dimen/edt_icon_height"
+            android:layout_width="@dimen/edt_icon_width"
+            app:tint="@color/color_white"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
