@@ -29,6 +29,7 @@
         app:layout_constraintHorizontal_bias="0"
         android:textSize="@dimen/biggest_text_size"
         tools:text="Valentine's Day"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCategoryLogo"
         app:layout_constraintStart_toEndOf="@+id/ivCategoryLogo"
         app:layout_constraintTop_toTopOf="@+id/ivCategoryLogo"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -37,6 +38,7 @@
         android:id="@+id/txtDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         style="@style/TextStyleStartRegular"
         android:layout_marginStart="@dimen/_13sdp"
         app:layout_constraintHorizontal_bias="0"

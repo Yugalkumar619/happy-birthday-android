@@ -68,7 +68,7 @@ object LocaleHelper {
         val list = ArrayList<WishesDataModel>()
 
         when(day){
-            ValentineDay.ROSE_DAY -> {
+            ValentineDay.BOYFRIEND -> {
                 list.add(WishesDataModel(description = "🌹 Happy Rose Day! 💖 May your life bloom with love ❤️ and happiness 😊."))
                 list.add(WishesDataModel(description = "🌹 A rose for you on Rose Day 🌸 to express my feelings 💕."))
                 list.add(WishesDataModel(description = "💐 Happy Rose Day! 🌹 May love always surround you ❤️."))
@@ -126,7 +126,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.PROPOSE_DAY -> {
+            ValentineDay.GIRLFRIEND -> {
 
                 list.add(WishesDataModel(description = "💍 Happy Propose Day! ❤️ Will you be mine forever? 😊"))
                 list.add(WishesDataModel(description = "💖 On this Propose Day 💍, I choose you today and always ♾️."))
@@ -178,7 +178,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.CHOCOLATE_DAY -> {
+            ValentineDay.FRIENDS -> {
                 list.add(WishesDataModel(description = "🍫 Happy Chocolate Day! 😍 May your day be filled with sweetness ❤️."))
                 list.add(WishesDataModel(description = "🍫 Sending you chocolates and love 💖 this Chocolate Day!"))
                 list.add(WishesDataModel(description = "🍬 Happy Chocolate Day! 😊 Because love tastes better with chocolate ❤️."))
@@ -235,7 +235,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.TEDDY_DAY -> {
+            ValentineDay.BROTHER -> {
                 list.add(WishesDataModel(description = "🧸 Happy Teddy Day! 💖 May your life be filled with warm hugs 🤗."))
                 list.add(WishesDataModel(description = "🧸 Sending you a teddy full of love ❤️. Happy Teddy Day!"))
                 list.add(WishesDataModel(description = "🧸 Happy Teddy Day! 😊 A soft hug to brighten your day 💕."))
@@ -286,7 +286,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.PROMISE_DAY -> {
+            ValentineDay.SISTER -> {
                 list.add(WishesDataModel(description = "🤝 Happy Promise Day! 💖 I promise to stand by you always ❤️."))
                 list.add(WishesDataModel(description = "🤝 On Promise Day 💕, I promise my heart to you forever ♾️."))
                 list.add(WishesDataModel(description = "🤝 Happy Promise Day! 😊 A promise made with love ❤️."))
@@ -337,7 +337,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.HUG_DAY -> {
+            ValentineDay.WIFE -> {
 
                 list.add(WishesDataModel(description = "🤗 Happy Hug Day! 💖 May your day be filled with warmth and love ❤️."))
                 list.add(WishesDataModel(description = "🤗 Sending you a big warm hug 🤍. Happy Hug Day!"))
@@ -389,7 +389,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.KISS_DAY -> {
+            ValentineDay.SON -> {
 
                 list.add(WishesDataModel(description = "💋 Happy Kiss Day! ❤️ One kiss, endless love 😘."))
                 list.add(WishesDataModel(description = "💋 Sending you a sweet kiss 😘 filled with love ❤️. Happy Kiss Day!"))
@@ -441,7 +441,7 @@ object LocaleHelper {
 
             }
 
-            ValentineDay.VALENTINES_DAY -> {
+            ValentineDay.DAD -> {
 
                 list.add(WishesDataModel(description = "❤️ Happy Valentine’s Day! 💖 You make my world brighter 😊."))
                 list.add(WishesDataModel(description = "❤️ Wishing you a Valentine’s Day filled with love 💕 and smiles 😄."))

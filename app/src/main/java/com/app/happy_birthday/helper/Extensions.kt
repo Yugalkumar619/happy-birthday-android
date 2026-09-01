@@ -767,7 +767,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.ROSE_DAY -> {
+            ValentineDay.BOYFRIEND -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("rose_$i", "drawable", packageName)
@@ -777,7 +777,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.PROPOSE_DAY -> {
+            ValentineDay.GIRLFRIEND -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("propose_$i", "drawable", packageName)
@@ -787,7 +787,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.CHOCOLATE_DAY -> {
+            ValentineDay.FRIENDS -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("chocolate_$i", "drawable", packageName)
@@ -797,7 +797,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.TEDDY_DAY -> {
+            ValentineDay.BROTHER -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("teddy_$i", "drawable", packageName)
@@ -807,7 +807,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.PROMISE_DAY -> {
+            ValentineDay.SISTER -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("promise_$i", "drawable", packageName)
@@ -817,7 +817,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.HUG_DAY -> {
+            ValentineDay.WIFE -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("hug_$i", "drawable", packageName)
@@ -827,7 +827,7 @@ object Extensions {
                 }
             }
 
-            ValentineDay.KISS_DAY -> {
+            ValentineDay.SON -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("kiss_$i", "drawable", packageName)
@@ -837,7 +837,57 @@ object Extensions {
                 }
             }
 
-            ValentineDay.VALENTINES_DAY -> {
+            ValentineDay.DAD -> {
+                for (i in 1..20) {
+                    // Use the resource name dynamically
+                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+
+                    // Add the image to the list
+                    images.add(WallpaperDataModel(imageResId))
+                }
+            }
+
+            ValentineDay.MOTHER -> {
+                for (i in 1..20) {
+                    // Use the resource name dynamically
+                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+
+                    // Add the image to the list
+                    images.add(WallpaperDataModel(imageResId))
+                }
+            }
+
+            ValentineDay.KIDS -> {
+                for (i in 1..20) {
+                    // Use the resource name dynamically
+                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+
+                    // Add the image to the list
+                    images.add(WallpaperDataModel(imageResId))
+                }
+            }
+
+            ValentineDay.GRANDPA -> {
+                for (i in 1..20) {
+                    // Use the resource name dynamically
+                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+
+                    // Add the image to the list
+                    images.add(WallpaperDataModel(imageResId))
+                }
+            }
+
+            ValentineDay.HUSBAND -> {
+                for (i in 1..20) {
+                    // Use the resource name dynamically
+                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+
+                    // Add the image to the list
+                    images.add(WallpaperDataModel(imageResId))
+                }
+            }
+
+            ValentineDay.ME -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
                     val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
@@ -861,56 +911,56 @@ object Extensions {
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_rose,
-                day = ValentineDay.ROSE_DAY
+                day = ValentineDay.BOYFRIEND
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_ring,
-                day = ValentineDay.PROPOSE_DAY
+                day = ValentineDay.GIRLFRIEND
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_chocolate,
-                day = ValentineDay.CHOCOLATE_DAY
+                day = ValentineDay.FRIENDS
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_teddy,
-                day = ValentineDay.TEDDY_DAY
+                day = ValentineDay.BROTHER
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_promise,
-                day = ValentineDay.PROMISE_DAY
+                day = ValentineDay.SISTER
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_hug,
-                day = ValentineDay.HUG_DAY
+                day = ValentineDay.WIFE
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_kiss,
-                day = ValentineDay.KISS_DAY
+                day = ValentineDay.SON
             )
         )
 
         data.add(
             CategoryDataModel(
                 image = R.drawable.ic_valentines,
-                day = ValentineDay.VALENTINES_DAY
+                day = ValentineDay.DAD
             )
         )
 
