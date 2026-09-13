@@ -51,7 +51,7 @@ import kotlin.collections.ArrayList
 object Global {
 
     /** set to false when latest build uploading on play store */
-    const val isTestModeEnabled = true
+    const val isTestModeEnabled = false
     fun Boolean.isEnabled(block: () -> Unit) {
         if (this) block() else return
     }

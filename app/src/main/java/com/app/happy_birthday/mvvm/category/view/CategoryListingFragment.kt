@@ -15,7 +15,7 @@ import com.app.happy_birthday.helper.BaseFragment
 import com.app.happy_birthday.helper.Constants
 import com.app.happy_birthday.helper.Extensions.getCategoryData
 import com.app.happy_birthday.helper.Extensions.getSerializableViaArgument
-import com.app.happy_birthday.helper.helper_model.ValentineDay
+import com.app.happy_birthday.helper.helper_model.BirthdayPerson
 import com.app.happy_birthday.helper.interfaces.CommonInterfaceClickEvent
 import com.app.happy_birthday.mvvm.category.view_model.CategoryListingObj
 import com.app.happy_birthday.mvvm.category.view_model.CategoryViewModel
@@ -63,7 +63,7 @@ class CategoryListingFragment : BaseFragment() {
             AdsManager.loadBanner(requireActivity(), R.id.banner_container)
         }
         setUpToolbar(binding.ilToolbar,
-            title = getString(R.string.label_select_a_day),
+            title = "Select Person",
             isBackArrow = true,
             toolbarClickListener = object : CommonInterfaceClickEvent {
                 override fun onToolBarListener(type: String) {
@@ -76,14 +76,20 @@ class CategoryListingFragment : BaseFragment() {
                 }
             }
         )
-        binding.ilToolbar.root.backgroundTintList = ContextCompat.getColorStateList(mActivity,if(viewModel.obj.isPremium) R.color.color_yellow else R.color.color_red)
+        binding.ilToolbar.root.backgroundTintList = ContextCompat.getColorStateList(mActivity,if(viewModel.obj.isPremium) R.color.color_yellow else R.color.color_blue_light)
 
 
 
         binding.rvCategory.adapter = viewModel.adapterPhotos
         viewModel.adapterPhotos
         viewModel.arrListPhotosData.clear()
-        viewModel.arrListPhotosData.addAll(mActivity.getCategoryData())
+        viewModel.arrListPhotosData.addAll(
+            if (viewModel.obj.isWishes) {
+                mActivity.getCategoryData()
+            } else {
+                mActivity.getCategoryData().filter { it.day.hasImage }
+            }
+        )
         viewModel.adapterPhotos.onClickEvent = onItemClickListener
         viewModel.updateWallpaperGridAdapter()
     }
@@ -108,10 +114,10 @@ class CategoryListingFragment : BaseFragment() {
             val data = viewModel.arrListPhotosData.get(position)
 
             if(viewModel.obj.isWishes){
-                navigateToWishesListing(WishesObj(data?.day?: ValentineDay.NONE))
+                navigateToWishesListing(WishesObj(data?.day?: BirthdayPerson.NONE))
             }else{
                 navigateToWallpaperListing(
-                    WallpaperListingObj(isPremium = false, day = data?.day?: ValentineDay.NONE )
+                    WallpaperListingObj(isPremium = false, day = data?.day?: BirthdayPerson.NONE )
                 )
             }
 

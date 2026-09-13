@@ -235,7 +235,7 @@ class HomeActivity : BaseActivity() {
         val options = BitmapFactory.Options().apply {
             inScaled = false
         }
-        val bitPhoto = BitmapFactory.decodeResource(resources, R.drawable.valentine_12, options)
+        val bitPhoto = BitmapFactory.decodeResource(resources, R.drawable.img_boyfriend_7, options)
         val icon: Bitmap = bitPhoto
         val share = Intent(Intent.ACTION_SEND)
         share.type = "text/plain"

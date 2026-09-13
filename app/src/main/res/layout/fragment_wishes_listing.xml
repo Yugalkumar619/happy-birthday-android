@@ -19,7 +19,7 @@
         android:paddingTop="@dimen/_10sdp"
         android:paddingHorizontal="@dimen/screen_margin"
         android:clipToPadding="false"
-        tools:listitem="@layout/lv_item_bhajan_list"
+        tools:listitem="@layout/lv_item_wish_list"
         app:layout_constraintTop_toBottomOf="@+id/ilToolbar"
         app:layout_constraintBottom_toTopOf="@+id/banner_container"
         app:spanCount="3"

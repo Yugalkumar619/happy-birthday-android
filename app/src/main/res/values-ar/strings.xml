@@ -218,7 +218,7 @@
     <string name="label_apply_italic">Apply ITALIC</string>
     <string name="label_select_a_day">Select a Day</string>
     <string name="label_no_wishes_saved_yet">No wishes saved yet</string>
-    <string name="label_start_saving_valentine">Start saving Valentine wishes you love</string>
+    <string name="label_start_saving_birthday">Start saving Birthday wishes you love</string>
 
 
 </resources>

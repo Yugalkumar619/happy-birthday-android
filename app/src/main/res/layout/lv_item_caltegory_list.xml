@@ -1,52 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_60sdp"
+    android:layout_height="@dimen/_40sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginTop="@dimen/_5sdp"
-    android:backgroundTint="@color/color_light_pink"
+    android:layout_marginTop="@dimen/_8sdp"
     android:background="@drawable/category_bg">
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/ivCategoryLogo"
-        android:layout_width="@dimen/_43sdp"
-        android:layout_height="@dimen/_43sdp"
-        tools:src="@drawable/ic_rose"
-        android:scaleType="centerCrop"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="@dimen/screen_margin"/>
 
     <TextView
         android:id="@+id/txtCategoryName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/TextStyleStartBold"
-        android:layout_marginStart="@dimen/_10sdp"
-        app:layout_constraintHorizontal_bias="0"
-        android:textSize="@dimen/biggest_text_size"
-        tools:text="Valentine's Day"
-        app:layout_constraintBottom_toBottomOf="@+id/ivCategoryLogo"
-        app:layout_constraintStart_toEndOf="@+id/ivCategoryLogo"
-        app:layout_constraintTop_toTopOf="@+id/ivCategoryLogo"
+        style="@style/TextStyleStartSemiBold"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:textSize="@dimen/big_text_size"
+        tools:text="Happy Birthday"
+        android:layout_marginHorizontal="@dimen/screen_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
-    <TextView
-        android:id="@+id/txtDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        style="@style/TextStyleStartRegular"
-        android:layout_marginStart="@dimen/_13sdp"
-        app:layout_constraintHorizontal_bias="0"
-        tools:text="14 Feb"
-        app:layout_constraintStart_toEndOf="@+id/ivCategoryLogo"
-        app:layout_constraintBottom_toBottomOf="@+id/ivCategoryLogo"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

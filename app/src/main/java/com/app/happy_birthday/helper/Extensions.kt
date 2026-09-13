@@ -61,7 +61,7 @@ import com.app.happy_birthday.helper.Global.showSnackBar
 import com.app.happy_birthday.helper.interfaces.CommonInterfaceClickEvent
 import com.app.happy_birthday.helper.helper_model.AddImageModel
 import com.app.happy_birthday.helper.helper_model.CalenderDatesModel
-import com.app.happy_birthday.helper.helper_model.ValentineDay
+import com.app.happy_birthday.helper.helper_model.BirthdayPerson
 import com.app.happy_birthday.mvvm.category.model.CategoryDataModel
 import com.app.happy_birthday.mvvm.wallpaper.model.WallpaperDataModel
 import kotlinx.coroutines.Job
@@ -753,149 +753,149 @@ object Extensions {
     }
 
 
-    fun Context.getWallpaperImages(isPremium: Boolean= false, premiumCount: Int = 0, day: ValentineDay ): java.util.ArrayList<WallpaperDataModel> {
+    fun Context.getWallpaperImages(isPremium: Boolean= false, premiumCount: Int = 0, day: BirthdayPerson ): java.util.ArrayList<WallpaperDataModel> {
         val images = arrayListOf<WallpaperDataModel>()
         // Add images from j1 to j141 dynamically
         when(day){
-            ValentineDay.PREMIUM -> {
+            BirthdayPerson.PREMIUM -> {
                 for (i in 1..premiumCount) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("premium_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_premium_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.BOYFRIEND -> {
+            BirthdayPerson.BOYFRIEND -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("rose_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_boyfriend_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.GIRLFRIEND -> {
+            BirthdayPerson.GIRLFRIEND -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("propose_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_girlfriend_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.FRIENDS -> {
+            BirthdayPerson.FRIENDS -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("chocolate_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_friend_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.BROTHER -> {
+            BirthdayPerson.BROTHER -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("teddy_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_brother_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.SISTER -> {
+            BirthdayPerson.SISTER -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("promise_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_sister_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.WIFE -> {
+            BirthdayPerson.WIFE -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("hug_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_wife_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.SON -> {
+//            BirthdayPerson.SON -> {
+//                for (i in 1..20) {
+//                    // Use the resource name dynamically
+//                    val imageResId = resources.getIdentifier("img_son_$i", "drawable", packageName)
+//
+//                    // Add the image to the list
+//                    images.add(WallpaperDataModel(imageResId))
+//                }
+//            }
+
+            BirthdayPerson.DAD -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("kiss_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_father_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.DAD -> {
+            BirthdayPerson.MOTHER -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_mother_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.MOTHER -> {
+            BirthdayPerson.KIDS -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_kids_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.KIDS -> {
+//            BirthdayPerson.GRANDPA -> {
+//                for (i in 1..20) {
+//                    // Use the resource name dynamically
+//                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+//
+//                    // Add the image to the list
+//                    images.add(WallpaperDataModel(imageResId))
+//                }
+//            }
+
+            BirthdayPerson.HUSBAND -> {
                 for (i in 1..20) {
                     // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+                    val imageResId = resources.getIdentifier("img_husband_$i", "drawable", packageName)
 
                     // Add the image to the list
                     images.add(WallpaperDataModel(imageResId))
                 }
             }
 
-            ValentineDay.GRANDPA -> {
-                for (i in 1..20) {
-                    // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
-
-                    // Add the image to the list
-                    images.add(WallpaperDataModel(imageResId))
-                }
-            }
-
-            ValentineDay.HUSBAND -> {
-                for (i in 1..20) {
-                    // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
-
-                    // Add the image to the list
-                    images.add(WallpaperDataModel(imageResId))
-                }
-            }
-
-            ValentineDay.ME -> {
-                for (i in 1..20) {
-                    // Use the resource name dynamically
-                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
-
-                    // Add the image to the list
-                    images.add(WallpaperDataModel(imageResId))
-                }
-            }
+//            BirthdayPerson.ME -> {
+//                for (i in 1..20) {
+//                    // Use the resource name dynamically
+//                    val imageResId = resources.getIdentifier("valentine_$i", "drawable", packageName)
+//
+//                    // Add the image to the list
+//                    images.add(WallpaperDataModel(imageResId))
+//                }
+//            }
 
             else   -> {
 
@@ -910,59 +910,96 @@ object Extensions {
         val data = arrayListOf<CategoryDataModel>()
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_rose,
-                day = ValentineDay.BOYFRIEND
+                hasImages = BirthdayPerson.BOYFRIEND.hasImage,
+                day = BirthdayPerson.BOYFRIEND
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_ring,
-                day = ValentineDay.GIRLFRIEND
+                hasImages = BirthdayPerson.GIRLFRIEND.hasImage,
+                day = BirthdayPerson.GIRLFRIEND
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_chocolate,
-                day = ValentineDay.FRIENDS
+                hasImages = BirthdayPerson.FRIENDS.hasImage,
+                day = BirthdayPerson.FRIENDS
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_teddy,
-                day = ValentineDay.BROTHER
+                hasImages = BirthdayPerson.BROTHER.hasImage,
+                day = BirthdayPerson.BROTHER
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_promise,
-                day = ValentineDay.SISTER
+                hasImages = BirthdayPerson.SISTER.hasImage,
+                day = BirthdayPerson.SISTER
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_hug,
-                day = ValentineDay.WIFE
+                hasImages = BirthdayPerson.WIFE.hasImage,
+                day = BirthdayPerson.WIFE
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_kiss,
-                day = ValentineDay.SON
+                hasImages = BirthdayPerson.SON.hasImage,
+                day = BirthdayPerson.SON
             )
         )
 
         data.add(
             CategoryDataModel(
-                image = R.drawable.ic_valentines,
-                day = ValentineDay.DAD
+                hasImages = BirthdayPerson.DAD.hasImage,
+                day = BirthdayPerson.DAD
             )
         )
+
+        data.add(
+            CategoryDataModel(
+                hasImages = BirthdayPerson.MOTHER.hasImage,
+                day = BirthdayPerson.MOTHER
+            )
+        )
+
+        data.add(
+            CategoryDataModel(
+                hasImages = BirthdayPerson.KIDS.hasImage,
+                day = BirthdayPerson.KIDS
+            )
+        )
+
+
+        data.add(
+            CategoryDataModel(
+                hasImages = BirthdayPerson.HUSBAND.hasImage,
+                day = BirthdayPerson.HUSBAND
+            )
+        )
+
+        data.add(
+            CategoryDataModel(
+                hasImages = BirthdayPerson.GRANDPA.hasImage,
+                day = BirthdayPerson.GRANDPA
+            )
+        )
+
+        data.add(
+            CategoryDataModel(
+                hasImages = BirthdayPerson.ME.hasImage,
+                day = BirthdayPerson.ME
+            )
+        )
+
 
 
         return data

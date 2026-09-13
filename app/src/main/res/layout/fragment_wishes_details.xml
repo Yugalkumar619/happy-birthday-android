@@ -29,7 +29,7 @@
                 android:id="@+id/ivBhajanImage"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:src="@drawable/valentine_1"
+                android:src="@drawable/img_girlfriend_1"
                 android:scaleType="centerCrop"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

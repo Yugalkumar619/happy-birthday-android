@@ -30,7 +30,7 @@ import com.app.happy_birthday.helper.Extensions.getUnlockedWallpaperCount
 import com.app.happy_birthday.helper.Extensions.openMyAppOnPlayStore
 import com.app.happy_birthday.helper.Global.isMessageShown
 import com.app.happy_birthday.helper.billing.BillingManager
-import com.app.happy_birthday.helper.helper_model.ValentineDay
+import com.app.happy_birthday.helper.helper_model.BirthdayPerson
 import com.app.happy_birthday.mvvm.category.view_model.CategoryListingObj
 import com.app.happy_birthday.mvvm.wallpaper.view_model.WallpaperListingObj
 
@@ -172,7 +172,7 @@ class HomeFragment : BaseFragment() {
 
         binding.ilPremium.conBg.setOnClickListener {
 //            openPublisherOnPlayStore(mActivity)
-            navigateToWallpaperListing(WallpaperListingObj(true,sharedPrefs.getUnlockedWallpaperCount(mActivity), ValentineDay.PREMIUM))
+            navigateToWallpaperListing(WallpaperListingObj(true,sharedPrefs.getUnlockedWallpaperCount(mActivity), BirthdayPerson.PREMIUM))
         }
 
         binding.ilRateUs.conBg.setOnClickListener {

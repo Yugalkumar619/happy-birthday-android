@@ -12,7 +12,7 @@
     <string name="label_check_out_app" translatable="false">Check out %1$s app: https://play.google.com/store/apps/details?id=%2$s</string>
 
     <string name="google_ad_application_id_dev" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="google_ad_application_id_live" translatable="false">ca-app-pub-2088375739935408~6660667645</string>
+    <string name="google_ad_application_id_live" translatable="false">ca-app-pub-2088375739935408~6175406931</string>
 
     <string name="text_enable">Enable</string>
     <string name="no">No</string>
@@ -235,6 +235,6 @@
     <string name="label_images">Images</string>
     <string name="label_select_a_day">Select a Day</string>
     <string name="label_no_wishes_saved_yet">No wishes saved yet</string>
-    <string name="label_start_saving_valentine">Start saving Valentine wishes you love</string>
+    <string name="label_start_saving_birthday">Start saving Birthday wishes you love</string>
 
 </resources>

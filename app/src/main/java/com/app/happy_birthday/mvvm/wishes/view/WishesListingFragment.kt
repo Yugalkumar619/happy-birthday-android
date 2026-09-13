@@ -76,18 +76,18 @@ class WishesListingFragment : BaseFragment() {
         )
 
 
-        binding.rvBhajan.adapter = viewModel.adapterBhajan
-        viewModel.adapterBhajan
-        viewModel.arrListBhajanData.clear()
-        viewModel.arrListBhajanData.addAll(getAllBhajan(viewModel.obj.day))
-        viewModel.adapterBhajan.onClickEvent = onItemClickListener
+        binding.rvBhajan.adapter = viewModel.adapterWish
+        viewModel.adapterWish
+        viewModel.arrListWishData.clear()
+        viewModel.arrListWishData.addAll(getAllBhajan(viewModel.obj.day))
+        viewModel.adapterWish.onClickEvent = onItemClickListener
         viewModel.updateBhajanListAdapter()
     }
 
     private val onItemClickListener = object :  CommonInterfaceClickEvent{
         override fun onItemClick(type: String, position: Int) {
 
-            var data = viewModel.arrListBhajanData.get(position)
+            var data = viewModel.arrListWishData.get(position)
             AdsManager.showInterstitial(mActivity) {}
 //            navigateToBhajanDetails(data)
         }

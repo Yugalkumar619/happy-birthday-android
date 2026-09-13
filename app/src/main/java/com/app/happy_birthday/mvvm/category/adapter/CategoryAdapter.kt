@@ -23,13 +23,7 @@ class CategoryAdapter constructor() : RecyclerView.Adapter<CategoryAdapter.MyVie
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val a = arrCategoryList[position]
-        val context = holder.itemView.context
-
-//        holder.binding.ivPhoto.setImageResource(a?.image?:0)
-//        holder.binding.ivPhoto.loadPhotoUsingCoil(a?.image)
         holder.binding.txtCategoryName.text = a?.day?.displayName
-//        holder.binding.txtDate.text = a?.day?.date
-        holder.binding.ivCategoryLogo.setImageResource(a?.image?:0)
         holder.binding.root.setOnClickListener{
             onClickEvent?.onItemClick("image",position)
         }

@@ -28,9 +28,9 @@ object AdsManager {
     private const val TEST_REWARDED     = "ca-app-pub-3940256099942544/5224354917"
 
     // YOUR REAL IDs (replace these before publishing)
-    private const val BANNER_ID       = "ca-app-pub-2088375739935408/3351978024"
-    private const val INTERSTITIAL_ID = "ca-app-pub-2088375739935408/9725814686"
-    private const val REWARDED_ID     = "ca-app-pub-2088375739935408/8374022806"
+    private const val BANNER_ID       = "ca-app-pub-2088375739935408/5876506535"
+    private const val INTERSTITIAL_ID = "ca-app-pub-2088375739935408/9240553970"
+    private const val REWARDED_ID     = "ca-app-pub-2088375739935408/2464604082"
 
     private var interstitialAd: InterstitialAd? = null
     private var rewardedAd: RewardedAd? = null

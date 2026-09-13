@@ -88,7 +88,7 @@ class SavedListingFragment : BaseFragment() {
         binding.layoutEmpty.ivEmptyIcon.setImageResource(R.drawable.ic_file_location)
         binding.layoutEmpty.ivEmptyIcon.isVisible = true
         binding.layoutEmpty.txtEmptyMessage.text = getString(R.string.label_no_wishes_saved_yet)
-        binding.layoutEmpty.txtEmptySubMessage.text = getString(R.string.label_start_saving_valentine)
+        binding.layoutEmpty.txtEmptySubMessage.text = getString(R.string.label_start_saving_birthday)
 
 
 

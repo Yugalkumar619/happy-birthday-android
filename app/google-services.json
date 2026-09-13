@@ -1,51 +1,13 @@
 {
   "project_info": {
-    "project_number": "433279979308",
-    "project_id": "happy-new-year-a1bd7",
-    "storage_bucket": "happy-new-year-a1bd7.firebasestorage.app"
+    "project_number": "931207759411",
+    "project_id": "happybirthday-2ceb4",
+    "storage_bucket": "happybirthday-2ceb4.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:433279979308:android:77907b46d198202513e689",
-        "android_client_info": {
-          "package_name": "com.app.happy_new_year"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD7INP9N91R0wjyCVV6U9Ux_RjmUbgUF_g"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:433279979308:android:7ebcad0957e9348613e689",
-        "android_client_info": {
-          "package_name": "com.app.merry_christmas"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD7INP9N91R0wjyCVV6U9Ux_RjmUbgUF_g"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:433279979308:android:1fc6f17df5ef628b13e689",
+        "mobilesdk_app_id": "1:931207759411:android:c929dd9281dabe69918546",
         "android_client_info": {
           "package_name": "com.app.happy_birthday"
         }
@@ -53,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD7INP9N91R0wjyCVV6U9Ux_RjmUbgUF_g"
+          "current_key": "AIzaSyDnxCaCKgT9w28lOiJgmSULpoaS8tJGkjo"
         }
       ],
       "services": {
