@@ -65,7 +65,7 @@ class BillingManager(private val context: Context) : PurchasesUpdatedListener {
     private fun queryProductDetails() {
         val productList = listOf(
             QueryProductDetailsParams.Product.newBuilder()
-                .setProductId("premium_unlock_valentine")
+                .setProductId("premium_unlock_birthday")
                 .setProductType(BillingClient.ProductType.INAPP)
                 .build()
         )
@@ -101,7 +101,7 @@ class BillingManager(private val context: Context) : PurchasesUpdatedListener {
 
             val result = billingClient.queryPurchasesAsync(params.build())
             if (result.billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
-                val purchased = result.purchasesList.any { it.products.contains("premium_unlock_valentine") && it.isAcknowledged }
+                val purchased = result.purchasesList.any { it.products.contains("premium_unlock_birthday") && it.isAcknowledged }
                 _isPremium.postValue(purchased)
             }
         }
@@ -125,7 +125,7 @@ class BillingManager(private val context: Context) : PurchasesUpdatedListener {
         when (billingResult.responseCode) {
             BillingClient.BillingResponseCode.OK -> {
                 purchases?.forEach { purchase ->
-                    if (purchase.products.contains("premium_unlock_valentine") && purchase.purchaseState == Purchase.PurchaseState.PURCHASED) {
+                    if (purchase.products.contains("premium_unlock_birthday") && purchase.purchaseState == Purchase.PurchaseState.PURCHASED) {
                         if (!purchase.isAcknowledged) {
                             acknowledgePurchase(purchase)
                         } else {
