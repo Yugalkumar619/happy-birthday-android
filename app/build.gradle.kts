@@ -17,15 +17,16 @@ android {
         applicationId = "com.app.happy_birthday"
         minSdk = 24
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             ndk.debugSymbolLevel = "FULL"
         }
@@ -72,7 +73,6 @@ dependencies {
 
     /** firebase */
     platform("com.google.firebase:firebase-bom:32.5.0")
-    implementation("com.google.firebase:firebase-crashlytics-buildtools:3.0.4")
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-core:21.1.1")
     implementation("com.google.firebase:firebase-messaging:24.1.2")
@@ -85,7 +85,7 @@ dependencies {
     implementation("com.facebook.android:facebook-login:18.0.3")
 
     /** PushWoosh */
-    implementation("com.pushwoosh:pushwoosh-firebase:6.7.26")
+//    implementation("com.pushwoosh:pushwoosh-firebase:6.7.26")
 
     /** Network operations
         Ktor Network dependencies */

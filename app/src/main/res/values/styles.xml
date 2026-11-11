@@ -81,6 +81,12 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
+    <style name="CollageTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:fontFamily">@font/font_semibold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
     <style name="CommonButtonStyle.Pink">
         <item name="android:backgroundTint">@color/color_pink</item>
     </style>

@@ -58,4 +58,12 @@
         android:id="@+id/action_navigation_category_listing"
         app:destination="@id/navigation_category_listing" />
 
+    <fragment
+        android:id="@+id/navigation_collage"
+        android:name="com.app.happy_birthday.mvvm.collage.view.CollageFragment"
+        tools:layout="@layout/fragment_collage" />
+    <action
+        android:id="@+id/action_navigation_collage"
+        app:destination="@id/navigation_collage" />
+
 </navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_76sdp"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:background="@drawable/bg_collage_template_item"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_3sdp">
+
+    <com.app.happy_birthday.mvvm.collage.view.CollageThumbnailView
+        android:id="@+id/ivTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/txtTemplateName"
+        style="@style/TextStyleCenterRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/section_sub_title_text_size" />
+
+</LinearLayout>

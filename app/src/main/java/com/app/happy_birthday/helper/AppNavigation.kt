@@ -52,6 +52,10 @@ object AppNavigation {
         findNavController().navigate(R.id.navigation_wishes_listing,bundle)
     }
 
+    fun Fragment.navigateToCollage(){
+        findNavController().navigate(R.id.action_navigation_collage)
+    }
+
     fun Fragment.navigateToRingtoneListing(){
         findNavController().navigate(R.id.action_navigation_ringtone_listing)
     }

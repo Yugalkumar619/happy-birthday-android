@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_collage_bottom_sheet"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_14sdp">
+
+    <TextView
+        style="@style/TextStyleCenterSemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_collage_choose_wish_title"
+        android:textSize="@dimen/header_text_size" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/screen_margin"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:selectionRequired="true"
+            app:singleLine="true"
+            app:singleSelection="true" />
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWishes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_340sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/screen_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_collage_wish" />
+
+</LinearLayout>

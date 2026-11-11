@@ -28,7 +28,6 @@ import com.app.happy_birthday.helper.Extensions.toastRamWallpaperFolder
 import com.app.happy_birthday.helper.Global.showSnackBar
 import com.app.happy_birthday.helper.ShareDetails.initSaveDeepLink
 import com.google.android.gms.ads.MobileAds
-import com.pushwoosh.Pushwoosh
 import org.json.JSONObject
 
 class HomeActivity : BaseActivity() {
@@ -188,11 +187,7 @@ class HomeActivity : BaseActivity() {
     }
 
     private fun getIntentData() {
-        if (intent.hasExtra(Pushwoosh.PUSH_RECEIVE_EVENT)) {
-            val referringParams = JSONObject(intent.getStringExtra(Pushwoosh.PUSH_RECEIVE_EVENT).toString())
-            referringParams.toString().printLog("PUSH DETAILS")
-            initSaveDeepLink(referringParams , null)
-        }
+
     }
 
 

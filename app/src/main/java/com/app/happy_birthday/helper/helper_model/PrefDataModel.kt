@@ -1,5 +1,7 @@
 package com.app.happy_birthday.helper.helper_model
 
+import com.google.gson.annotations.SerializedName
+
 data class StoreDataModel(
     val currency_code_ar: String? = null,
     val currency_code_en: String? = null,
@@ -29,7 +31,13 @@ data class Device(
     val app_version: String? = null
 )
 
+/**
+ * Saved as JSON, so the names must not change when R8 renames these fields. The alternate names
+ * read settings saved by a build where R8 had already renamed them.
+ */
 data class AppConfigModel(
+    @SerializedName("lang", alternate = ["a"])
     var lang :String = "en",
+    @SerializedName("cartBadgeCount", alternate = ["b"])
     var cartBadgeCount :String = "0"
 )

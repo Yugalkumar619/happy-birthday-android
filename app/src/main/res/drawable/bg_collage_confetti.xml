@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="270dp"
+    android:height="337.5dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1350">
+
+    <path android:pathData="M0,0H1080V1350H0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="0"
+                android:endY="1350"
+                android:startX="0"
+                android:startY="0"
+                android:type="linear">
+                <item android:color="#FFFFE3EE" android:offset="0" />
+                <item android:color="#FFFFF9E8" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Streamers, top corners -->
+    <path android:pathData="M20,30C65,85 105,20 150,75S205,65 225,35" android:strokeColor="#FFE91E78" android:strokeLineCap="round" android:strokeWidth="9" />
+    <path android:pathData="M1060,30C1015,85 975,20 930,75S875,65 855,35" android:strokeColor="#FF2E9BE6" android:strokeLineCap="round" android:strokeWidth="9" />
+    <path android:pathData="M18,125C60,165 95,110 150,150" android:strokeColor="#FFFFB300" android:strokeLineCap="round" android:strokeWidth="8" />
+    <path android:pathData="M1062,125C1020,165 985,110 930,150" android:strokeColor="#FF8E44D6" android:strokeLineCap="round" android:strokeWidth="8" />
+
+    <!-- Confetti, top -->
+    <path android:fillColor="#FF2E9BE6" android:pathData="M200,120l26,10l-8,22l-26,-10z" />
+    <path android:fillColor="#FFFFB300" android:pathData="M60,75l24,-12l10,20l-24,12z" />
+    <path android:fillColor="#FF2BB673" android:pathData="M1000,70l26,8l-7,23l-26,-8z" />
+    <path android:fillColor="#FFE91E78" android:pathData="M860,125l24,-12l10,20l-24,12z" />
+    <path android:fillColor="#FF8E44D6" android:pathData="M180,125m-10,0a10,10 0 1,0 20,0a10,10 0 1,0 -20,0z" />
+    <path android:fillColor="#FFFFB300" android:pathData="M900,125m-10,0a10,10 0 1,0 20,0a10,10 0 1,0 -20,0z" />
+    <path android:fillColor="#FF2BB673" android:pathData="M120,160m-8,0a8,8 0 1,0 16,0a8,8 0 1,0 -16,0z" />
+    <path android:fillColor="#FF2E9BE6" android:pathData="M965,160m-8,0a8,8 0 1,0 16,0a8,8 0 1,0 -16,0z" />
+
+    <!-- Confetti, side margins -->
+    <path android:fillColor="#FFE91E78" android:pathData="M12,300l26,8l-7,23l-26,-8z" />
+    <path android:fillColor="#FF2BB673" android:pathData="M22,520m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+    <path android:fillColor="#FF2E9BE6" android:pathData="M14,720l24,-10l9,21l-24,10z" />
+    <path android:fillColor="#FFFFB300" android:pathData="M1040,290l26,10l-8,22l-26,-10z" />
+    <path android:fillColor="#FF8E44D6" android:pathData="M1056,510m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+    <path android:fillColor="#FFE91E78" android:pathData="M1035,730l24,-10l9,21l-24,10z" />
+    <path android:fillColor="#FF8E44D6" android:pathData="M16,1000l26,8l-7,23l-26,-8z" />
+    <path android:fillColor="#FF2BB673" android:pathData="M1040,1010l24,-10l9,21l-24,10z" />
+    <path android:fillColor="#FFFFB300" android:pathData="M28,1160m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+    <path android:fillColor="#FF2E9BE6" android:pathData="M1052,1170m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+
+    <!-- Confetti, bottom edge -->
+    <path android:fillColor="#FFE91E78" android:pathData="M90,1305l26,8l-7,23l-26,-8z" />
+    <path android:fillColor="#FF2E9BE6" android:pathData="M240,1312l24,-10l9,21l-24,10z" />
+    <path android:fillColor="#FFFFB300" android:pathData="M400,1322m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+    <path android:fillColor="#FF2BB673" android:pathData="M540,1306l26,8l-7,23l-26,-8z" />
+    <path android:fillColor="#FF8E44D6" android:pathData="M700,1322m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+    <path android:fillColor="#FFE91E78" android:pathData="M840,1312l24,-10l9,21l-24,10z" />
+    <path android:fillColor="#FF2E9BE6" android:pathData="M985,1305l26,8l-7,23l-26,-8z" />
+
+</vector>

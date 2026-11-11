@@ -2,6 +2,7 @@ package com.app.happy_birthday.mvvm.home.view
 
 import AdsManager
 import AppNavigation.navigateToCategoryListing
+import AppNavigation.navigateToCollage
 import AppNavigation.navigateToRingtoneListing
 import AppNavigation.navigateToSavedListing
 import AppNavigation.navigateToWallpaperListing
@@ -129,6 +130,11 @@ class HomeFragment : BaseFragment() {
         binding.ilRateUs.ivOption.setImageResource(R.drawable.ic_rate_us)
         binding.ilRateUs.txtTitle.text = getString(R.string.label_rate_us)
 
+        // Collage Wishes Section
+        binding.ilCollage.conBg.backgroundTintList = ContextCompat.getColorStateList(mActivity, R.color.color_pink)
+        binding.ilCollage.ivOption.setImageResource(R.drawable.ic_collage)
+        binding.ilCollage.txtTitle.text = getString(R.string.label_collage_wishes)
+
 
 //        binding.btnUnlock.isVisible = canWatchAd()
 
@@ -164,6 +170,10 @@ class HomeFragment : BaseFragment() {
         binding.ilWishes.conBg.setOnClickListener {
 //            navigateToBhajanListing()
             navigateToCategoryListing(CategoryListingObj(isWishes = true))
+        }
+
+        binding.ilCollage.conBg.setOnClickListener {
+            navigateToCollage()
         }
 
         binding.ilRingtone.conBg.setOnClickListener {
